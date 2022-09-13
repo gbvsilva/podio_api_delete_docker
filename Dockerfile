@@ -10,7 +10,7 @@ RUN apk update
 RUN apk add --no-cache py3-pip python3-dev git
 
 # Getting pypodio2 library
-RUN pip install -e git+https://github.com/gbvsilva/podio-py.git#egg=podio-py
+RUN pip install -e git+https://github.com/gbvsilva/podio-py.git#egg=pypodio2
 
 # Installing Python dependencies
 RUN pip install --no-cache-dir psycopg2-binary requests
