@@ -49,6 +49,7 @@ if __name__ == '__main__':
             if deletion == 0:
                 hours = getHour(seconds=timeOffset)
                 message = f"Esperando as próximas {timeOffset/3600}hs. Até às {hours}"
+                timer(timeOffset)
             elif deletion == 2:
                 hour = getHour(hours=1)
                 message = f"Esperando a hora seguinte às {hour}"
@@ -69,7 +70,7 @@ if __name__ == '__main__':
                     username,	
                     password	
                 )
-                #time.sleep(1)
+                time.sleep(1)
             else:
                 hour = getHour()
                 message = f"{hour} -> Erro inesperado na criação/atualização do BD. Terminando o programa."
