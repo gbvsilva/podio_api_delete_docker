@@ -19,5 +19,5 @@ RUN pip install --no-cache-dir psycopg2-binary requests
 RUN apk del git && rm -rf /var/cache/apk/*
 
 # Setting entrypoint
-CMD ["-u", "/opt/podio_api/main.py"]
+CMD ["-u", "/opt/podio_api_delete/main.py"]
 ENTRYPOINT [ "python3" ]
